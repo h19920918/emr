@@ -4,7 +4,7 @@ This work has been published on The Meeting of the Association for Computational
 Linguistics (ACL 2019).  
 Here is the paper of arxiv version in https://arxiv.org/abs/1903.06164.  
 
-We are going to update other experiments (TVQA) as soon as possible.
+We are going to update other experiment (TVQA) as soon as possible.
 
 # Requirements
 * Python 3.6.4  
@@ -17,7 +17,9 @@ We are going to update other experiments (TVQA) as soon as possible.
 # How to use
 
 [bAbI]  
-'python main-a3c.py --task-id=#NUMBER --prepro  --model=#NAME --log-dir=#DIR'  
+```shell
+python main-a3c.py --task-id=#NUMBER --prepro  --model=#NAME --log-dir=#DIR  
+```
 
 You can see other configuration in 'main-a3c.py'.  
 If you have a pre-process, you do not have to do it again.
@@ -25,8 +27,15 @@ If you have a pre-process, you do not have to do it again.
 [TriviaQA]  
 Download TriviaQA dataset from http://nlp.cs.washington.edu/triviaqa  
 
-To pre-process, run 'python prepro.py'  
-'python main-a3c --task=#NAME --model=#NANE --rl-method=#NAME'  
+To pre-process TriviaQA dataset,
+```shell
+'python prepro.py'  
+```
+
+Training models,
+```shell
+python main-a3c --task=#NAME --model=#NANE --rl-method=#NAME  
+```
 
 You can see other configuration in 'main-a3c.py'.  
 
