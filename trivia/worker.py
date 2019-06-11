@@ -518,12 +518,7 @@ class TrainWorker(WorkerBase):
                         result = self._qa_forward()
                         acc, qa_loss = result['acc'], result['qa_loss']
                     exact, f1 = result['exact'], result['f1']
-                    if self.cfg.annealing:
-                        alpha = self.gstep.value / self.cfg.num_episodes
-                        reward = alpha * f1 + (1 - alpha) * solv
-                        rewards.append(reward)
-                    else:
-                        rewards.append(f1)
+                    rewards.append(f1)
                     continue
 
                 episode_step += 1
@@ -537,12 +532,7 @@ class TrainWorker(WorkerBase):
                     if self.cfg.rl_method == 'discrete':
                         rewards.append(solv)
                     else:
-                        if self.cfg.annealing:
-                            alpha = self.gstep.value / self.cfg.num_episodes
-                            reward = alpha * f1 + (1 - alpha) * solv
-                            rewards.append(reward)
-                        else:
-                            rewards.append(f1)
+                        rewards.append(f1)
 
                     assert(len(values) == len(rewards) == len(log_probs) == len(entropies))
                     episode_len = len(rewards)
@@ -629,12 +619,7 @@ class TrainWorker(WorkerBase):
                     if self.cfg.rl_method == 'discrete':
                         rewards.append(solv)
                     else:
-                        if self.cfg.annealing:
-                            alpha = self.gstep.value / self.cfg.num_episodes
-                            reward = alpha * f1 + (1 - alpha) * solv
-                            rewards.append(reward)
-                        else:
-                            rewards.append(f1)
+                        rewards.append(f1)
 
         assert(len(self.env.memory) <= self.cfg.memory_num)
         result = self._qa_forward()
