@@ -21,7 +21,11 @@ Recommend running with at least three GPUs.
 ## bAbI  
 To pre-process and train the model,
 ```shell
-python main-a3c.py --task-id=[2, 22] --prepro  --model=[FIFO, UNIFORM, LIFO, LRU_DNTM, R_EMR, T_EMR] --log-dir=$DIR  
+python main-a3c.py \
+  --task-id=[2, 22] \
+  --prepro \
+  --model=[FIFO, UNIFORM, LIFO, LRU_DNTM, R_EMR, T_EMR] \
+  --log-dir=$DIR  
 ```
 
 You can see other configuration in 'main-a3c.py'.  
@@ -37,11 +41,14 @@ python prepro.py
 
 To train the model,
 ```shell
-python main-a3c.py --task=[web, wikipedia] --model=[FIFO, UNIFORM, LIFO, LRU_DNTM, R_EMR, T_EMR] --rl-method=[a3c, policy, discrete] --log-dir=$DIR
+python main-a3c.py \
+  --task=[web, wikipedia] \
+  --model=[FIFO, UNIFORM, LIFO, LRU_DNTM, R_EMR, T_EMR] \
+  --rl-method=[a3c, policy, discrete] \
+  --log-dir=$DIR  
 ```
 
 You can see other configuration in 'main-a3c.py'.  
-
 
 ## Demo
 
@@ -54,7 +61,6 @@ python main-a3c.py --demo --ckpt=TRAINED_MODEL
 ```shell
 python main-a3c.py --test --ckpt=TRAINED_MODEL  
 ```
-
 
 # Acknowledgements
 
