@@ -16,7 +16,8 @@ We are going to update other experiment (TVQA) as soon as possible.
 
 # How to use
 
-[bAbI]  
+## [bAbI]  
+To pre-process and train the model,
 ```shell
 python main-a3c.py --task-id=#NUMBER --prepro  --model=#NAME --log-dir=#DIR  
 ```
@@ -24,15 +25,15 @@ python main-a3c.py --task-id=#NUMBER --prepro  --model=#NAME --log-dir=#DIR
 You can see other configuration in 'main-a3c.py'.  
 If you have a pre-process, you do not have to do it again.
 
-[TriviaQA]  
+## [TriviaQA]  
 Download TriviaQA dataset from http://nlp.cs.washington.edu/triviaqa  
 
 To pre-process TriviaQA dataset,
 ```shell
-'python prepro.py'  
+python prepro.py  
 ```
 
-Training models,
+To train the model,
 ```shell
 python main-a3c --task=#NAME --model=#NANE --rl-method=#NAME  
 ```
