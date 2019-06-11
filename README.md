@@ -21,7 +21,7 @@ Recommend running with at least three GPUs.
 ## bAbI  
 To pre-process and train the model,
 ```shell
-python main-a3c.py --task-id=#NUMBER --prepro  --model=#NAME --log-dir=#DIR  
+python main-a3c.py --task-id=NUMBER --prepro  --model=NAME --log-dir=DIR  
 ```
 
 You can see other configuration in 'main-a3c.py'.  
@@ -37,7 +37,7 @@ python prepro.py
 
 To train the model,
 ```shell
-python main-a3c.py --task=#NAME --model=#NANE --rl-method=#NAME  
+python main-a3c.py --task=NAME --model=NANE --rl-method=NAME  
 ```
 
 You can see other configuration in 'main-a3c.py'.  
@@ -46,7 +46,8 @@ You can see other configuration in 'main-a3c.py'.
 ## Demo and Test
 
 ```shell
-python main-a3c.py --demo or test --ckpt=#TRAINED_MODEL  
+python main-a3c.py --demo --ckpt=TRAINED_MODEL  
+python main-a3c.py --test --ckpt=TRAINED_MODEL  
 ```
 
 
