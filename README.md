@@ -16,13 +16,13 @@ boto3
 
 # How to use
 
-[bAbI]
+[bAbI]  
 'python main-a3c.py --task-id=#NUMBER --prepro  --model=#NAME --log-dir=#DIR'  
 
 You can see other configuration in 'main-a3c.py'.  
 If you have a pre-process, you do not have to do it again.
 
-[TriviaQA]
+[TriviaQA]  
 Download TriviaQA dataset from http://nlp.cs.washington.edu/triviaqa  
 
 To pre-process, type 'python prepro.py'  
