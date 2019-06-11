@@ -48,7 +48,7 @@ def config():
     parser.add_argument('--num-episodes', type=int, default=500000)
     parser.add_argument('--num-workers', type=int, default=5)
 
-    parser.add_argument('--rl-method', type=str, default='A3C')
+    parser.add_argument('--rl-method', type=str, default='a3c')
     parser.add_argument('--model', type=str, default='LIFO')
     parser.add_argument('--bert-model', type=str, default='bert-base-uncased')
     parser.add_argument('--hidden-size', type=int, default=128)
