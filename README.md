@@ -16,16 +16,18 @@ We are going to update other experiment (TVQA) as soon as possible.
 
 # How to use
 
-## [bAbI]  
+Recommend running with at least three GPUs.
+
+## bAbI  
 To pre-process and train the model,
 ```shell
 python main-a3c.py --task-id=#NUMBER --prepro  --model=#NAME --log-dir=#DIR  
 ```
 
 You can see other configuration in 'main-a3c.py'.  
-If you have a pre-process, you do not have to do it again.
+If you have a pre-process, you do not have to do it again.  
 
-## [TriviaQA]  
+## TriviaQA  
 Download TriviaQA dataset from http://nlp.cs.washington.edu/triviaqa  
 
 To pre-process TriviaQA dataset,
@@ -35,10 +37,17 @@ python prepro.py
 
 To train the model,
 ```shell
-python main-a3c --task=#NAME --model=#NANE --rl-method=#NAME  
+python main-a3c.py --task=#NAME --model=#NANE --rl-method=#NAME  
 ```
 
 You can see other configuration in 'main-a3c.py'.  
+
+
+## Demo and Test
+
+```shell
+python main-a3c.py --demo or test --ckpt=#TRAINED_MODEL  
+```
 
 
 # Acknowledgements

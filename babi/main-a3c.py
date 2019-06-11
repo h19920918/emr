@@ -31,7 +31,7 @@ def _parse_args():
     parser.add_argument('--babi-dir', default='./data/babi/en-valid-10k')
     parser.add_argument('--prepro-dir', default='./prepro/babi')
     parser.add_argument('--prepro', action='store_true')
-    parser.add_argument('--task-id', type=int, required=True)
+    parser.add_argument('--task-id', type=int, default=2)
 
     parser.add_argument('--num-workers', type=int, default=9)
     parser.add_argument('--log-dir', default='./logs-test/%s' % datetime.now().strftime('%b%d_%H-%M-%S'))
