@@ -8,7 +8,7 @@ We are going to update other experiments (TVQA) as soon as possible.
 
 # Requirements
 Python 3.6.4  
-Pytorch >= 1.0.0
+Pytorch >= 1.0.0  
 tensorboardX >= 1.6  
 tqdm  
 termcolor  
