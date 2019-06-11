@@ -9,10 +9,10 @@ We are going to update other experiments (TVQA) as soon as possible.
 # Requirements
 Python 3.6.4  
 Pytorch >= 1.0.0
-tensorboardX >= 1.6
-tqdm
-termcolor
-boto3
+tensorboardX >= 1.6  
+tqdm  
+termcolor  
+boto3  
 
 # How to use
 
@@ -25,8 +25,8 @@ If you have a pre-process, you do not have to do it again.
 [TriviaQA]  
 Download TriviaQA dataset from http://nlp.cs.washington.edu/triviaqa  
 
-To pre-process, type 'python prepro.py'  
-Run the model, 'python main-a3c --task=#NAME --model=#NANE --rl-method=#NAME'  
+To pre-process, run 'python prepro.py'  
+'python main-a3c --task=#NAME --model=#NANE --rl-method=#NAME'  
 
 You can see other configuration in 'main-a3c.py'.  
 
