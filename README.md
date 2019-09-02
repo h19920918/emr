@@ -12,7 +12,14 @@ We are going to update other experiment (TVQA) as soon as possible.
 * tensorboardX >= 1.6  
 * tqdm  
 * termcolor  
-* boto3  
+* boto3
+* numpy
+* (below is for only tvqa)
+* pysrt
+* h5py
+* image
+* seaborn
+* matplotlib
 
 # How to use
 
@@ -88,19 +95,7 @@ Codes for preprocessing are also included in this repository.
 Preparing ImageNet feature is also needed.
 
 In case of ImageNet feature, please divide it in to pieces using "sep_large.py".
-
-### Requirements:
-- Python 3.6.4
-- PyTorch >= 1.0
-- tensorboardX
-- pysrt
-- tqdm
-- h5py
-- numpy
-- matplotlib
-- image
-- seaborn
-  
+ 
 ### Usage:
 0. Pretraining	
 	```
