@@ -3,8 +3,7 @@
 This work has been published on The Meeting of the Association for Computational
 Linguistics (ACL 2019).  
 Here is the paper of arxiv version in https://arxiv.org/abs/1903.06164.  
-
-We are going to update other experiment (TVQA) as soon as possible.
+or you can find the paper of ACL anthology version in https://aclweb.org/anthology/P19-1434 
 
 # Requirements
 * Python 3.6.4  
